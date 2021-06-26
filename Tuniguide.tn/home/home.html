@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Tuniguide | Home</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="nav1" >
+            <div class="nav-links2">
+                <ul>
+                    <li><a href="">E-mail : TuniGuide@gmail.com</a></li>
+                    <li><a href="">Phone Number : +216 94 482 011</a></li>
+                </ul>
+            </div>
+            <div class="nav-links3">
+                <ul>
+                    <li><a href=""> <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""> <i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+
+
+        <nav class="nav2" >
+            <a href="home.html" class="titre">TuniGuide</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../home/home.html"><i class="fa fa-home" style="margin-right: 8px;"></i>Home</a></li>
+                    <li><a href="../home/home.html#dest"><i class="fas fa-map-marked-alt" style="margin-right: 8px;"></i>Destinations</a></li>
+                    <li><a href="../gallerie/gallerie.html"><i class="fa fa-image" style="margin-right: 8px;"></i>Gallery</a></li>
+                    <li><a href="../contact1/index.html"><i class="fa fa-phone"style="margin-right: 8px;"></i>Contact </a></li>
+
+                  <!-- ****************** code PHP LOGIN ************************* -->
+                 <!-- <?php
+                  include_once('../php/tuniguidedb.php');		
+                  $db= new db_login;
+                  session_start();
+                  if (isset($_SESSION['uid'])) {
+                    echo '
+                    <li><a href="../profile/profile.php"><i class="fa fa-user"style="margin-right: 8px;"></i>My Profile</a></li>';
+                  
+                }
+                else if(isset($_POST["mail"]) & isset($_POST["pwd"])){
+                  
+                  $res=$db->getUser($_POST["mail"],$_POST["pwd"]);
+                  $count=mysqli_num_rows($res);
+                  if($count>0){
+                
+                    $_SESSION['uid']=$_POST["mail"];
+                    $res=$db->addDateLast($_SESSION['uid']);
+                    echo
+                     "<script>location.href='../home/home.php'</script>";
+                    header("location:../home/home.php");
+                    exit;
+                    
+                  }
+                  else{
+                    echo'
+                    <li><a href=""><i class="fa fa-user"></i>Login</a></li>
+                    <script>swal(
+                      "E-mail or password was wrong",
+                       "Please try again",
+                       "error"
+                    ).then(function() {
+                      window.location = "../login/index.php";
+                    });</script>';
+                    
+                    
+                  }
+                }
+                else {
+                  echo '<li><a href="../login/index.php"><i class="fa fa-user"></i>  Login</a></li>';
+                }
+                ?> -->
+                  <!-- ****************** ************************* -->      
+                
+                </ul>
+           
+            </div>
+        </nav>
+        
+        <div class="text-box">
+            <h1 class="dis">Discover Tunisia</h1>
+    
+            <p>There’s so much to see and do in each region of Tunisia: a wide variety of landscapes, a coastline spanning 1,250km, studded with islands and archipelagos, a fantastic array of traditions and customs and a rich historical heritage. We are delighted to introduce you to these regions by breaking them down into three areas: the north, the centre and the south.</p>
+            
+            </div>
+        
+              <form method="post" action="search.php" name="f">
+                <input type="search" name="key" placeholder="search location ....">
+               <button type="submit" class="fa fa-search"></button>
+              </form>
+        
+    </section>
+
+
+
+    <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+
+    <!-----course------>
+    <section class="Services">
+        <hr>
+        <h1>Our Services </h1>
+       
+       
+        <img src="arrow_down-2-48.png" class="drop2">
+   
+        
+        
+        <div class="row">
+
+            <div class="course-col">
+                <i class="fas fa-map-marked-alt" ></i>
+                <h3>Tavel Destinations</h3>
+                <p>Integrate insipiring destination content from TuniGuide and let it be the reason your visitors choose to travel with you.</p>
+            </div>
+            <div class="course-col">
+                <i class="fa fa-image" ></i>
+                <h3>Gallery</h3>
+                <p>A wide range of pictures from our website destinations for you to see, react and share with others.</p>
+            </div>
+            <div class="course-col">
+                <i class="fas fa-star"></i>
+                <h3>Rate Destinations</h3>
+                <p>Write a review about our content for others and suggest them to visit other places.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <!----------------------------Facilities---------------------------------------->
+    <section class="facilities" >
+        <hr>
+        <h1> Description of the most Populaire cites</h1>
+        
+        <img src="arrow_down-2-48.png" class="drop2">
+    
+        <div class="row">
+            <div class="facilities-col">
+                <img src="mes1.png" alt=" " >
+                <h3 style="text-align: center; ">Monastir</h3>
+                <p style="text-align: left; font-weight : bold;">Monastir is a major tourist resort. With its attractive marina and old fishing port, the city is an excellent base for a beach holiday, offering a wide range of activities such as water sports, fishing, excursions and golf...</p>
+            </div>
+            <div class="facilities-col">
+                <img src="jer1.jpg" alt=" " >
+                <h3 style="text-align: center; ">Djerba</h3>
+                <p style="text-align: left; font-weight : bold;">A mediterranean flavour with African scents, houses sunk in the sand with blue doors and round ceilings, endless beaches and an opening culture where artists and writers sourced for inspiration...</p>
+            </div>
+            <div class="facilities-col">
+                <img src="toz1.jpg" alt=" " >
+                <h3  style="text-align: center;">Tozer</h3>
+                <p  style="text-align: left; font-weight : bold;">This charming city in the South West of Tunisia is based around a large Oasis famous for its Palm trees and production of dates,which are exported around thewordl. The city is a good place to glimpse the Sahara from and take in traditional Tunisian culture...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------campus------------->
+    <section class="campus" id="dest">
+        <hr>
+        <br>
+        <h1>Discover the most destinations</h1>
+        
+        <img src="arrow_down-2-48.png" class="drop2">
+       
+        <div class="row">
+      
+            <div class="campus-col">
+                <img src="monastir.jpg" alt="">
+                <a href="../dest/Monastir/home/home.html">
+                <div class="layer">
+                    <h3>Monastir</h3>
+                </div>
+                </a>
+
+            </div>
+           
+            <div class="campus-col">
+                <img src="djerba.jpg" alt="">
+                <a href="../dest/Djerba/home/home.html">
+                    <div class="layer">
+                        <h3>Djerba</h3>
+                    </div>
+                    </a>
+            </div>
+            
+            
+            <div class="campus-col">
+               <img src="tozeur.jpg" alt="">
+               <a href="../dest/Tozeur/home/home.html">
+                <div class="layer">
+                    <h3>Tozeur</h3>
+                </div>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+<!--------------------------------etstimonaials------------------------->
+    <section class="testimonials">
+        <hr>
+        <br>
+        <h1>Last customers feedback box</h1>
+        <!--
+         <?php
+        include_once("admin.php") ;
+        
+        $db1 = new siteDB ;
+        $res=$db1->getMsgUser();
+        ?>
+        <img src="arrow_down-2-48.png" class="drop2">
+       
+        <div class="row">
+            <?php while ($row=mysqli_fetch_array($res)) { ?>
+            <div class="testimonial-col">
+                <?php
+            echo '<img class="pdp_c" src="data:image/jpeg;base64,'.base64_encode( $row["photo_c"] ).'"/>';
+            ?>
+                <h3><?php echo $row["nom_c"].' '.$row["pren_c"] ?></h3>
+                <div>
+                    <p><?php echo $row["msg_user"] ?></p>
+                    <h3 style="margin-left: 300px;"> <?php
+                        $i=0;
+                        while ($i<$row["rate_user"]) {
+                            $i++;
+                            echo'
+                        <i class="fas fa-star"style="color: rgb(255,215,0);"></i>';
+                        }
+                        for ($j=$i ; $j<5 ; $j++)
+                        echo' <i class="far fa-star"style="color: rgb(255,215,0);"></i>';
+                        ?></h3>
+                   
+                </div>
+            </div>
+            <?php } ?> -->
+        </div>
+    </section> 
+<!--------------------------------call To Actin------------------------->
+    <section class="cta">
+        <h1><br> </h1>
+        <a href="../contact1" class="hero-btn"><h3>Contact US</h3></a>
+    </section>
+<!--------------------------------footer------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>TuniTravel is a website that provides accurate informations
+        such as events,places about Tunisia.<br>
+        Our webiste aim to provide advice on which
+        destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+</section>
+
+
+</body>
+</html>

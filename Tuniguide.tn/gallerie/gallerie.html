@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Tuniguide | Gallery</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://kit.fontawesome.com/7c0ba23dab.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic,700,900">
+        <!--
+        Artcore Template
+		http://www.templatemo.com/preview/templatemo_423_artcore
+        -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo-misc.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--
+        <?php
+    include_once ('gallerieDB.php');
+    session_start();
+    $db= new galDB ;
+    $res=$db->getLike(1);
+    $row1=mysqli_fetch_array($res);
+    $res=$db->getLike(2);
+    $row2=mysqli_fetch_array($res);
+    $res=$db->getLike(3);
+    $row3=mysqli_fetch_array($res);
+    $res=$db->getLike(4);
+    $row4=mysqli_fetch_array($res);
+
+?> -->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <section id="pageloader">
+            <div class="loader-item fa fa-spin colored-border"></div>
+        </section> <!-- /#pageloader -->
+
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="section-header col-md-12">
+                        <h2>Most Polpular Cites In Tunisia</h2><br><input type="submit" value="RETURN TO HOME" onclick="window.location='../home/home.html';">
+                    
+                    </div> <!-- /.section-header -->
+                </div> <!-- /.row -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="blog-thumb">
+                                <img src="images/Chott el Djerid.jpg" alt="">
+                                <div class="overlay-b">
+                                    <div class="overlay-inner">
+                                        <a href="cites/Chott-el-Djerid.html" class="fa fa-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="box-content">
+                                    <h3 class="post-title"><a href="cites/Chott-el-Djerid.html"> Chott El Djerid</a></h3>
+                                    
+                                    <span class="blog-meta">It is the largest salt pan of the Sahara Desert, with a surface area of over 7,000 km2 (some sources state 5,000 km2). </span>
+                                    
+                                    <p>One of the most surreal sightseeing attractions in Tunisia, the Chott el Djerid is a long day trip from Djerba (290 kilometers) but worth it for anyone who wants to visit this bizarre natural formation.</p>    
+                                    <div class="x">
+                                        
+                                    <form method="POST">
+                                        <div class="ccontainer">
+                                        
+                                        <i onclick="window.location='like1.php';" id="3" class="far fa-heart" ></i>
+                                           
+                                        </div>
+                                </form>
+                                    
+                                    </div>
+                                    
+                                    <h1 class="far fa-heart"><?php echo '  '.$row1[0] ?></h1>
+
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+
+
+
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="blog-thumb">
+                                <img src="images/Djerba Explore Park.jpg" alt="">
+                                <div class="overlay-b">
+                                    <div class="overlay-inner">
+                                        <a href="cites/Djerba-Explore-Park.html" class="fa fa-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="box-content">
+                                    <h3 class="post-title"><a href="cites/Djerba-Explore-Park.html">Djerba Explore Park</a></h3>
+                                    <span class="blog-meta">Djerba Explore Park is situated in the middle of the Midoun tourist area, near Taguermess lighthouse.</span>
+                                    <p>Djerba Explore Park sits on the island's coastal road, 20 kilometers east of Houmt Souk. The complex combines the Lalla Hadria Museum and the Djerba Explore Crocodile Farm.</p> 
+                                    <div class="x">
+                                        <div class="ccontainer">
+                                            <i  name="like2" onclick="window.location='like2.php';" id="3" class="far fa-heart" ></i>
+                                        </div>
+                                    </div>
+                                    <h1 class="far fa-heart"><?php echo '  '.$row2[0] ?></h1>
+
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="blog-thumb">
+                                <img src="images/Djerba Traditional Heritage Museum.jpg" alt="">
+                                <div class="overlay-b">
+                                    <div class="overlay-inner">
+                                        <a href="cites/Djerba-Traditional-Heritage-Museum.html" class="fa fa-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="box-content">
+                                    <h3 class="post-title"><a href="cites/Djerba-Traditional-Heritage-Museum.html">Djerba Traditional Heritage Museum</a></h3>
+                                    <span class="blog-meta">Occupying a curvaceous purpose-built structure next to the Zaouia of Sidi Zitouni about 200m from the town centre, it houses expertly curated and displayed exhibits on traditional Djerban life and culture.</span>
+                                    <div class="x">
+                                        <div class="ccontainer">
+                                            <i  name="like3" onclick="window.location='like3.php';" id="4" class="far fa-heart" ></i>
+                                        </div>
+                                    </div>
+                                    <h1 class="far fa-heart"><?php echo '  '.$row3[0] ?></h1>
+
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="blog-thumb">
+                                <img src="images/Onk Jemel (Mos Espa).jpg" alt="">
+                                <div class="overlay-b">
+                                    <div class="overlay-inner">
+                                        <a href="cites/Onk-Jemel-(Mos Espa).html" class="fa fa-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="box-content">
+                                    <h3 class="post-title"><a href="cites/Onk-Jemel-(Mos Espa).html">Onk Jemel (Mos
+                                            Espa)</a>
+                                    </h3>
+                                    <span class="blog-meta">Star Wars fans: Take a deep breath now. Out in the desert, in
+                                        the area known as Onk Jemel, near Tozeur, is the abandoned film set of Mos Espa
+                                        surrounded by mammoth dunes.</span>
+                                    <p>This is where Anakin Skywalker did his first pod racing in Episode 1 - The Phantom
+                                        Menace.</p>
+                                    <div class="x">
+                                        <div class="ccontainer">
+                                            <i  name="like4" onclick="window.location='like4.php';" id="7" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <h1 class="far fa-heart"><?php echo '  '.$row4[0] ?></h1>
+
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pagination text-center">
+                                    <ul>
+                                        <li><a href="gallerie.html" class="active">1</a></li>
+                                        <li><a href="Monastir.html">2</a></li>
+                                        <li><a href="Djerba.html">3</a></li>
+                                        <li><a href="Tozeur.html">4</a></li>
+                                     
+                                    </ul>
+                                </div> <!-- /.pagination -->
+                            </div> <!-- /.col-md-12 -->
+                        </div> <!-- /.row -->
+                </div> <!-- /.row -->
+                
+            </div> <!-- /.inner-content -->
+        </div> <!-- /.content-wrapper -->
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Preloader -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('.loader-item').fadeOut(); // will first fade out the loading animation
+                    $('#pageloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow-y':'visible'});
+            })
+            //]]>
+        </script>
+        <!--<script src="js/heart.js"></script>-->
+        <script src="js/heart.js"></script>
+        
+    </body>
+</html>

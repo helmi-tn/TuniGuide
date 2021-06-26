@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>tuniguide</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+ </head>
+ <body>
+     
+
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h1 class="logo">TuniGuide</h1>
+      <div class="toggle"></div>
+    </header>
+    <video src="raid2_Trim_Trim.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h3>Never Stop  </h3> 
+      <h3>Exploring The World</h3>
+      <p>Tunisia tourism accounts for 8 million visitors into the country per year. There’s much to enjoy about this exciting North African destination. However, it’s best to come fully informed about the culture and what you might expect from this beautiful exotic land.</p>
+      <p>
+        If you’re planning a trip to the country this year, the following guide will prepare you by explaining some of the essential Tunisia facts for tourists.
+      </p>
+      
+	<button type="submit"0  class="b_d" style="vertical-align:middle" onclick="window.location='home.html';"><span></span>EXPLORE NOW</button>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  
+  <div class="menu">
+
+    <ul>
+        <h2> Sidebar :</h2>
+     
+      <li><a href="#"> <i class="fas fa-newspaper"></i><span>News</span></a></li>
+      <li><a href="#"><i class="fas fa-map-marked-alt"></i><span>Destination</span></a><li>
+      <li><a href="#"><i class="fab fa-blogger"></i><span>blog</span></a></li>
+      <li><a href="#"><i class="fas fa-address-book"></i><span>contact</span></a></li>
+      <li><a href="#"><i class="fas fa-sign-in-alt"></i><span>login</span></a></li>
+    </ul>
+  </div>
+
+  <script>
+       const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+  </html>

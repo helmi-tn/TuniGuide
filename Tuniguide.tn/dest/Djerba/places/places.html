@@ -1,0 +1,232 @@
+<?php
+	session_start ();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TuniGuide | Djerba Places</title>
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="diaporama/diap.css">
+    <link rel="stylesheet" href="places.css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+</head>
+<body>
+    <script src="places.js"></script>
+<?php
+
+
+
+$_SESSION ['username']="monta";
+
+
+
+?>
+<!-- Navbar -->
+
+	<header>
+    <div class='navbar'>
+    <a href="../../../home/home.php" id="logo" target="_blank" >TuniGuide</a>
+    <nav>
+      <ul>
+        <li><a href="../../../home/home.php"><i class="fa fa-home"></i>Home</a></li>
+        <div class="dropdown">
+            <li><a href=""><i class="fa fa-map-marked-alt"></i>Destinations <i class="fa fa-caret-down"></i></a></li>
+           <div class="dropdown-content">
+      <a href="../home/home.html">Djerba</a> <hr style='margin:-0.1rem;'>   
+      <a href="../../Monastir/home/home.html">Monastir</a> <hr style='margin:-0.1rem;'>
+      <a href="../../Tozeur/home/home.html">Tozeur</a> <hr style='margin:-0.1rem;'>
+          </div>
+        </div>
+
+        </ul>
+      </nav>
+    </div>
+     <script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+</header>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class='bg'>
+   <button class="viewonmap" onClick="showMap()"><i class="fas fa-map-marker-alt"></i> View on map</button>
+    <!--GOOGLE MAPS-->
+    <div class="googlemaps">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106106.97536755519!2d10.880466737281054!3d33.790552770476225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2stn!4v1620948508417!5m2!1sfr!2stn" width="1215" height="600" style="border:0;" allowfullscreen="" ></iframe>
+    </div>
+    
+    <!--GOOGLE MAPS-->
+  <div class="hidit">
+    <div class="mySlides fade">
+       <div class="TunisiaClass">
+      DJERBA
+      </div>
+      <div class="MonastirClass">
+      PLACES TO VISIT
+      </div>
+      
+   <img src='http://pix6.agoda.net/geo/city/17042/1_17042_02.jpg?s=1920x822' style="width:80%;height:48rem;">
+  </div>
+      
+    </div>
+    
+       <div class="whitepsace">
+         <br> <br>
+         
+          <!--ICONS!!!!!!!!!!!!-->
+<div style="flex-direction:column;display:flex;margin-bottom:-15rem;margin-left:-4rem;" >
+  <div style="font-weight:600;font-size:1.5rem;float:left;margin-top:2rem;margin-left:5rem;margin-bottom:1rem;">Sections</div>
+  <div class="flexchild">
+    <a href="../rest/rest.html">
+    <div class="icon" style="background: -webkit-linear-gradient(left,#b224ef,black);"><i class="fas fa-utensils" ></i></div>
+    <div><a href="../rest/rest.html" >&nbsp&nbspRestaurants</a></div>
+    </div>
+    </a>
+  
+  <div class="flexchild">
+    <a href="../places/places.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#EB5757,#000000);"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="text"><a href="../places/places.html" >&nbsp&nbspPlaces</a></div>
+  </div>
+    </a>
+  
+  <div class="flexchild" >
+    <a href="../cafe/cafe.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#6190E8,#000000)"><i class="fas fa-coffee"></i></div>
+    <div><a href="../cafe/cafe.html" >&nbsp&nbspCafés</a></div>
+  </div>
+  </a>
+  
+  
+  <div class="flexchild" >
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#43C6AC,#000000)"><i class="fas fa-store-alt"></i></div>
+    <div><a href="#" >&nbsp&nbspShopping</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" style="border-bottom:1px solid #404040;">
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,yellow,#000000)"><i class="fas fa-hotel"></i></div>
+    <div><a href="#" >&nbsp&nbspHotels</a></div>
+  </div>
+  </a>
+  
+    </div>  
+     
+         
+
+
+<script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+ <!--ICONSSSSSSS!!!!!!!!!!-->
+        <div style="margin-left:13rem;margin-top:-19rem;">
+        <p class='monas'>INTERESTING PLACES TO VISIT</p>
+      <hr style="width:70%;margin-left:5rem;border-width:3px;">
+      <p style="text-align:center;margin:0 5rem;line-height:2.5">Though a small island, Djerba contains the ingredients of many people’s idea of the ideal holiday vacation: soft, sandy <strong>beaches</strong>, warm Mediterranean <strong>waters</strong>, loads of <strong>activities</strong>, and an array of shops selling a good range of local <strong>handicrafts</strong>. It also sports a maze of cobblestone streets and a history of ethnic and religious diversity more pronounced than in the rest of the country.</p> <br>  
+    
+         </div>
+         <br>
+         <hr style="width:70%;border-width:5px;margin-left:20rem;">
+         <br><br><br><br><br>
+        <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+   <div class="bodycard">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/08/4802e0fccf94084e716b373642436fad.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>BORJ GHAZI MUSTPHA</strong> </h1>
+          <p class="card-text">
+           Built in the 13th-century by the Aragonese, this fort was captured by the Ottomans in 1560 and has been allowed to slowly crumble in recent times – be careful when exploring and don't rely on the protective barriers, which aren't well maintained. Interpretative labels are in French and Arabic only.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/07/7f7ac09c5472679478d4f0186e567c63.jpg" alt="Le pirate">
+          <div class="card-content">
+          <h1 class="card-header"><strong>TRADITION MUSEUM GUELLALA</strong></h1>
+          <p class="card-text">
+            This whitewashed complex sits in a commanding position at the top of a hill 2km east of Guellala on the road to Cedouikech. Inside, a well-intentioned but extremely dated collection of life-size dioramas uses mannequins to illustrate Djerban customs and folklore.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/02/6bd30bdbfb8dbf00eb6407ff273b2796.jpg">
+          <div class="card-content">
+            <h1 class="card-header"><strong>MARKET AREA</strong></h1>
+          <p class="card-text">
+          A tour in town is recommended to get a glimpse of Tunisian life – from the fishing port to the lively markets, and the beautiful “funduqs” houses (some are hundred of years old). There is also a special small church and two notable mosques (Mosque of the Turks and Mosque of the Strangers).</p>
+        </div>
+      </div>
+         </div>
+         </div>   
+         </div>  
+         <br><br>
+        <!--SECOND LINE CARDS-->
+         
+                <div class="bodycard" style="margin-top:-10rem;">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://lp-cms-production.imgix.net/2019-06/9c7d721abeb3db87fe48239df205166b-el-ghriba.jpg?auto=compress&crop=center&fit=crop&format=auto&h=140&w=320">
+          <div class="card-content">
+          <h1 class="card-header"><strong>EL GHRIBA</strong></h1>
+          <p class="card-text">
+           The most important synagogue on Djerba and the oldest in Tunisia, this 19th-century building is in a white compound 1km south of the medina. Pass through the external security check (bring your passport) and enter the synagogue to see its lovely interior, which features columns painted in blue, multicoloured tiles, stained glass and wooden furniture.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:-5cm;width:20cm;">
+        <div class="card">
+          <img class="card-img"src="https://image.arrivalguides.com/600x/00/45e8a2021e868fd6ca51915478ed1d0d.jpg" >
+          <div class="card-content">
+          <h1 class="card-header"><strong>SIDI MAHRES BEACH</strong></h1>
+          <p class="card-text">
+         This long sweep of golden sand with its gently breaking surf is Djerba's greatest attraction. It begins east of the low-lying Ras Remel Peninsula, which protrudes from the middle of the north coast 10km east of Houmt Souk (the peninsula is known as Flamingo Point because of the large number of flamingos that gather there in winter), and continues almost to the Taguermes Lighthouse. Unfortunately, pretty much all of the beach is for use by resort guests only.<br></p>
+        </div>
+      </div>
+         </div>
+       
+         </div>   
+         </div>  
+
+<!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+    </div>
+    
+    
+   
+
+    
+
+  
+  
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p style="color:white;">TuniGuide is a website that provides accurate informations
+such as events,places about Tunisia.
+Our webiste aim to provide advice on which
+destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+</section>
+    
+
+  
+  

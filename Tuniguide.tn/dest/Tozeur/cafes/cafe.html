@@ -1,0 +1,209 @@
+<?php
+	session_start ();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TuniGuide | Tozeur Cafes</title>
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="diaporama/diap.css">
+    <link rel="stylesheet" href="cafe.css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+</head>
+<body>
+<?php
+
+
+
+$_SESSION ['username']="monta";
+
+
+
+?>
+<!-- Navbar -->
+
+	<header>
+    <div class='navbar'>
+    <a href="../../../home/home.php" id="logo" target="_blank" >TuniGuide</a>
+    <nav>
+      <ul>
+        <li><a href="../../../home/home.php"><i class="fa fa-home"></i>Home</a></li>
+        <div class="dropdown">
+            <li><a href=""><i class="fa fa-map-marked-alt"></i>Destinations <i class="fa fa-caret-down"></i></a></li>
+           <div class="dropdown-content">
+      <a href="../../Djerba/home/home.html">Djerba</a> <hr style='margin:-0.1rem;'>   
+      <a href="../../Monastir/home/home.html">Monastir</a> <hr style='margin:-0.1rem;'>
+      <a href="../../Tozeur/home/home.html">Tozeur</a> <hr style='margin:-0.1rem;'>
+          </div>
+        </div>
+
+        </ul>
+      </nav>
+    </div>
+     <script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+</header>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class='bg'>
+   <button class="viewonmap" onClick="showMap()"><i class="fas fa-map-marker-alt"></i> View on map</button>
+    <!--GOOGLE MAPS-->
+    <div class="googlemaps">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26487.064971791115!2d8.122466882770823!3d33.91840757353814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stozeur%20cafe!5e0!3m2!1sfr!2stn!4v1621292259025!5m2!1sfr!2stn" width="1215" height="600" style="border:0;" allowfullscreen="" ></iframe>
+    </div>
+    
+    <!--GOOGLE MAPS-->
+  <div class="hidit">
+    <div class="mySlides fade">
+       <div class="TunisiaClass">
+      TOZEUR
+      </div>
+      <div class="MonastirClass">
+      CAFÉS
+      </div>
+      
+   <img src='https://wallpapercave.com/wp/wp4104104.jpg' style="width:80%;height:48rem;">
+  </div>
+      
+    </div>
+    
+       <div class="whitepsace">
+         <br> <br>
+         
+          <!--ICONS!!!!!!!!!!!!-->
+<div style="flex-direction:column;display:flex;margin-bottom:-15rem;margin-left:-4rem;" >
+  <div style="font-weight:600;font-size:1.5rem;float:left;margin-top:2rem;margin-left:5rem;margin-bottom:1rem;">Sections</div>
+  <div class="flexchild">
+    <a href="../rest/rest.html">
+    <div class="icon" style="background: -webkit-linear-gradient(left,#b224ef,black);"><i class="fas fa-utensils" ></i></div>
+    <div><a href="../rest/rest.html" >&nbsp&nbspRestaurants</a></div>
+    </div>
+    </a>
+  
+  <div class="flexchild">
+    <a href="../places/places.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#EB5757,#000000);"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="text"><a href="../places/places.html" >&nbsp&nbspPlaces</a></div>
+  </div>
+    </a>
+  
+  <div class="flexchild" >
+    <a href="../cafes/cafe.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#6190E8,#000000)"><i class="fas fa-coffee"></i></div>
+    <div><a href="../cafes/cafe.html" >&nbsp&nbspCafés</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" >
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#43C6AC,#000000)"><i class="fas fa-store-alt"></i></div>
+    <div><a href="#" >&nbsp&nbspShopping</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" style="border-bottom:1px solid #404040;">
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,yellow,#000000)"><i class="fas fa-hotel"></i></div>
+    <div><a href="#" >&nbsp&nbspHotels</a></div>
+  </div>
+  </a>
+  
+    </div>  
+     
+         
+
+
+<script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+ <!--ICONSSSSSSS!!!!!!!!!!-->
+        <div style="margin-left:15rem;margin-top:-19rem;">
+        <p class='monas'>TOZEUR</p>
+      <hr style="width:70%;margin-left:5rem;border-width:3px;">
+      <p style="text-align:center;margin:0 5rem;line-height:2.5">Nearly in every coffee shop in Tozeur you can order all kinds of <strong>tea,shishas and cocktails</strong>. Cafés are known for their tropical vibe view where you can enjoy your time and rest your mind in the afternoon after a long hot weather day.</p> <br>  
+    
+         </div>
+         <br>
+         <hr style="width:70%;border-width:5px;margin-left:20rem;">
+         <br><br><br>
+        <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+   <div class="bodycard">      
+    <div class="grid">
+      <div class="grid-item" style="width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://scontent.ftun6-1.fna.fbcdn.net/v/t1.6435-9/160845473_10160749198403056_7609539454149403993_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=GI29K5GRtQsAX86k1VU&_nc_ht=scontent.ftun6-1.fna&oh=23c55c02f0440609f44c973b401ac063&oe=60CA8E48">
+          <div class="card-content">
+          <h1 class="card-header"><strong>SAHARA LOUNGE</strong></h1>
+          <p class="card-text">
+            Set in the palmeraie, this is a great place for a shisha under the palm trees, or a coffee. Courting couples and families sitting at the tables spread throughout the garden.</p>
+          <a href="http://www.sahara-lounge.com/" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://assets.afcdn.com/recipe/20180801/81655_w1024h768c1cx2843cy1895.jpg" alt="Le pirate">
+          <div class="card-content">
+          <h1 class="card-header"><strong>LA GROTTE</strong><span style="font-size:0.8rem;">&nbsp&nbsp +216 50 191 091<span></h1>
+          <p class="card-text">
+           A step up from the street-side cafes, La Grotte, à la its name, is fitted out to look like the inside of a cave, albeit a cool, air-conditioned one. It tends to draw a younger crowd of men.</p>
+           <a href="https://m.facebook.com/profile.php?id=193162944050910" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://www.mantitlement.com/wp-content/uploads/2017/06/gourmesso-coffee-tequila-cocktail-single-698x1024.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>LE PETIT PRINCE</strong><span style="font-size:0.8rem;position:static;bottom:-69rem;">&nbsp&nbsp +216 76 452 518<span></h1>
+          <p class="card-text">
+           Previously a restaurant, now a smoky local boozer, this is the best place to get a drink outside the hotel bars in the Zone Touristique.</p>
+           <a href="https://www.facebook.com/restaurantspectaclebarlesjasmins/" target="_blank"><button class="card-btn" style="margin-top:-1rem;">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+         </div>   
+         </div>  
+       
+                        </div>
+          <section class="footer">
+    <h4>ABOUT US</h4>
+    <p style="color:white;">TuniGuide is a website that provides accurate informations
+such as events,places about Tunisia.
+Our webiste aim to provide advice on which
+destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+</section>
+  </div>
+  <script src="cafe.js"></script>
+</body>
+</html>
+
+<!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+          
+
+   
+        
+    
+
+  
+  

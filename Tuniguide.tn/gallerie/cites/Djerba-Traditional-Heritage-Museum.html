@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Tuniguide | Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic,700,900">
+        <!--
+        Artcore Template
+		http://www.templatemo.com/preview/templatemo_423_artcore
+        -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/templatemo-misc.css">
+        <link rel="stylesheet" href="../css/templatemo-style.css">
+        <script src="../js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+ <!--
+    <?php
+    include_once ('gallerieDB.php');
+    session_start();
+    $db= new galDB ;
+
+    $res=$db->getComment();
+    
+    ?>--> 
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <section id="pageloader">
+            <div class="loader-item fa fa-spin colored-border"></div>
+        </section> <!-- /#pageloader -->
+
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="section-header col-md-12">
+                        <h2>Tunisia's Most RATED Places</h2><br><input type="submit" value="RETURN TO GALLERY" onclick="window.location='../gallerie.html';">
+                        <span></span>
+                    </div> <!-- /.section-header -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="blog-image col-md-12">
+                        <img src="Images/Djerba Traditional Heritage Museum.jpg" alt="">
+                    </div> <!-- /.blog-image -->
+                    <div class="blog-info col-md-12">
+                        <div class="box-content">
+                            <h2 class="blog-title">Djerba Traditional Heritage Musuem</h2>
+                            <span class="blog-meta"></span>
+                            <p>This interesting little museum is where to come if you want to dig a little deeper under Djerba's resort skin.</p>
+                            <blockquote>
+                                Although small, the galleries here display an impressive number of exhibits, all focused on Djerba's local heritage and exploring and preserving the island's cultural traditions.
+                            </blockquote>
+                        
+                            <p>As well as displays focused on the history of the island, there are well-curated exhibits devoted to Djerba's Jewish heritage, and fascinating displays of vibrant, traditional costumes, beautiful old jewelry, antique ceramics, and extravagantly carved wedding chests.
+
+                                The museum is housed next door to the beautiful 18th-century Zaouia of Sidi Zitouni. Visitors can also enter this mausoleum to view its impressive stalactite-designed ceilings.</p>
+                         </div>
+                    </div> <!-- /.blog-info -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="comment-heading">Comments</h2>
+                        <?php while ($row=mysqli_fetch_array($res)) { ?>
+                        <div class="box-content">
+                            
+                            <div class="comment last">
+                                <div class="comment-inner">
+                                    <div class="author-avatar">
+                                    <?php
+            echo '<img class="pdp_c" src="data:image/jpeg;base64,'.base64_encode( $row["photo_c"] ).'"/>';
+            ?>
+                                    </div>
+                                    <div class="comment-body">
+                                        <h4><?php echo $row[0].' '.$row[1] ?></h4>
+                                        <span><?php echo $row[2] ?></span>
+                                        <p><?php echo $row[3] ?></p>
+                                    </div>
+                                </div>
+                            </div>  <!-- /.comment -->
+                        </div> <!-- /.box-content -->
+                        <?php } ?>
+
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                
+                <div class="row">
+                    <div class="col-md-12 comment-form">
+                        <h2 class="comment-heading">Leave a Comment</h2>
+                        
+                        <div class="box-content">
+                            <form method="POST" action="comm.php">
+                            <p>
+                                <label for="comment">Your comment:</label>
+                                <textarea name="comment" id="comment"></textarea>  
+                            </p>
+                             <input type="submit" class="mainBtn" id="submit-comment" value="Submit Comment" />
+                            </form>
+                        </div> <!-- /.box-content -->
+                    </div> <!-- /.comment-form -->
+                </div> <!-- /.row -->
+            </div> <!-- /.inner-content -->
+        </div> <!-- /.content-wrapper -->
+
+        <script src="../js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+
+        <!-- Preloader -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('.loader-item').fadeOut(); // will first fade out the loading animation
+                    $('#pageloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow-y':'visible'});
+            })
+            //]]>
+        </script>
+
+    </body>
+</html>

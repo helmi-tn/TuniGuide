@@ -1,0 +1,237 @@
+<?php
+	session_start ();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TuniGuide | Tozeur Places</title>
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="diaporama/diap.css">
+    <link rel="stylesheet" href="places.css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+</head>
+<body>
+<?php
+
+
+
+$_SESSION ['username']="monta";
+
+
+
+?>
+<!-- Navbar -->
+
+	<header>
+    <div class='navbar'>
+    <a href="../../../home/home.php" id="logo" target="_blank" >TuniGuide</a>
+    <nav>
+      <ul>
+        <li><a href="../../../home/home.php"><i class="fa fa-home"></i>Home</a></li>
+        <div class="dropdown">
+            <li><a href=""><i class="fa fa-map-marked-alt"></i>Destinations <i class="fa fa-caret-down"></i></a></li>
+           <div class="dropdown-content">
+      <a href="../../Djerba/home/home.html">Djerba</a> <hr style='margin:-0.1rem;'>   
+      <a href="../../Monastir/home/home.html">Monastir</a> <hr style='margin:-0.1rem;'>
+      <a href="../home/home.html">Tozeur</a> <hr style='margin:-0.1rem;'>
+          </div>
+        </div>
+
+        </ul>
+      </nav>
+    </div>
+     <script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+</header>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class='bg'>
+   <button class="viewonmap" onClick="showMap()"><i class="fas fa-map-marker-alt"></i> View on map</button>
+    <!--GOOGLE MAPS-->
+    <div class="googlemaps">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43912.53341144817!2d8.109199990613298!3d33.907887154045575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1257c028313d134d%3A0xc48c27f26a58203!2sTozeur!5e0!3m2!1sfr!2stn!4v1621291428858!5m2!1sfr!2stn" width="1215" height="600" style="border:0;" allowfullscreen="" ></iframe>
+    </div>
+    
+    <!--GOOGLE MAPS-->
+  <div class="hidit">
+    <div class="mySlides fade">
+       <div class="TunisiaClass">
+      TOZEUR
+      </div>
+      <div class="MonastirClass">
+      PLACES TO VISIT
+      </div>
+      
+   <img src='https://assets.anantara.com/image/upload/q_auto,f_auto,c_scale,w_1440/media/minor/anantara/images/anantara-tozeur-resort/gallery/accommodation/atoz_acc_saharadeluxeroom_bed_view_gallery_1920x1037.jpg' style="width:80%;height:48rem;">
+  </div>
+      
+    </div>
+    
+       <div class="whitepsace">
+         <br> <br>
+         
+          <!--ICONS!!!!!!!!!!!!-->
+<div style="flex-direction:column;display:flex;margin-bottom:-15rem;margin-left:-4rem;" >
+  <div style="font-weight:600;font-size:1.5rem;float:left;margin-top:2rem;margin-left:5rem;margin-bottom:1rem;">Sections</div>
+  <div class="flexchild">
+    <a href="../rest/rest.html">
+    <div class="icon" style="background: -webkit-linear-gradient(left,#b224ef,black);"><i class="fas fa-utensils" ></i></div>
+    <div><a href="../rest/rest.html" >&nbsp&nbspRestaurants</a></div>
+    </div>
+    </a>
+  
+  <div class="flexchild">
+    <a href="../places/places.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#EB5757,#000000);"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="text"><a href="../places/places.html" >&nbsp&nbspPlaces</a></div>
+  </div>
+    </a>
+  
+  <div class="flexchild" >
+    <a href="../cafes/cafe.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#6190E8,#000000)"><i class="fas fa-coffee"></i></div>
+    <div><a href="../cafes/cafe.html" >&nbsp&nbspCafés</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" >
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#43C6AC,#000000)"><i class="fas fa-store-alt"></i></div>
+    <div><a href="#" >&nbsp&nbspShopping</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" style="border-bottom:1px solid #404040;">
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,yellow,#000000)"><i class="fas fa-hotel"></i></div>
+    <div><a href="#" >&nbsp&nbspHotels</a></div>
+  </div>
+  </a>
+  
+    </div>  
+     
+         
+
+
+<script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+ <!--ICONSSSSSSS!!!!!!!!!!-->
+        <div style="margin-left:13rem;margin-top:-19rem;">
+        <p class='monas'>INTERESTING PLACES TO VISIT</p>
+      <hr style="width:70%;margin-left:5rem;border-width:3px;">
+      <p style="text-align:center;margin:0 5rem;line-height:2.5"> With a medina (old town) full of unique brick-pattern architecture and a rambling palm grove that slices a sea of green through the <strong>desert</strong> sand, Touzeur is a great place to visit. Would-be adventurers will find plenty of tourist attractions and things to do in the surrounding <strong>countryside</strong>, be it dune-bashing, hot-spring soaking, salt pan admiring, and even visiting the crumbling and surreal remnants of a <strong>Star Wars movie set</strong> just out of town.</p> <br>  
+    
+         </div>
+         <br>
+         <hr style="width:70%;border-width:5px;margin-left:20rem;">
+         <br><br><br><br><br>
+        <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+   <div class="bodycard">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="http://www.wepostmag.com/wp-content/uploads/2018/06/chat-jerid-.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>CHOTT EL JRID</strong> </h1>
+          <p class="card-text">
+           During winter when the rains have come, some of it has to be navigated by boat, but in summer it nearly completely dries up, leaving the salt crust with its bizarre patterns exposed, stretching on for miles to the horizon. Fata Morgana (mirages) are commonly sighted here.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://www.planetware.com/photos-large/TUN/tunisia-tozeur-folk-museum.jpg" alt="Le pirate">
+          <div class="card-content">
+          <h1 class="card-header"><strong>FOLK MUSEUM</strong></h1>
+          <p class="card-text">
+            Housed in the Koubba of Sidi Bou Aissa, Tozeur's small Folk Museum (Musée des Arts et Traditions Populaires) is home to a series of exhibits and dioramas that explain the culture and day-to-day life of traditional Tozeur households.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://www.planetware.com/photos-large/TUN/tunisia-tozeur-el-hamma-du-djerid-waterfalls.jpg">
+          <div class="card-content">
+            <h1 class="card-header"><strong>EL HAMMA OF JRID</strong></h1>
+          <p class="card-text">
+          The hot springs here have been used for medicinal purposes since the Roman period and have waters rich in mineral deposits, said to help sufferers of skin conditions such as eczema. They are a wonderfully relaxing place to spend an afternoon soaking, whether you're there for medicinal reasons or not.</p>
+        </div>
+      </div>
+         </div>
+         </div>   
+         </div>  
+         <br><br>
+        <!--SECOND LINE CARDS-->
+         
+                <div class="bodycard" style="margin-top:-10rem;">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://www.planetware.com/wpimages/2020/09/tunisia-tozeur-top-attractions-onk-jemel-mos-espa.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>ONK JEMEL</strong></h1>
+          <p class="card-text">
+           Star Wars fans: Take a deep breath now. Out in the desert, in the area known as Onk Jemel, near Tozeur, is the abandoned film set of Mos Espa surrounded by mammoth dunes.
+This is where Anakin Skywalker did his first pod racing in Episode 1 - The Phantom Menace.</p>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:-5cm;width:20cm;">
+        <div class="card">
+          <img class="card-img"src="https://www.planetware.com/photos-large/TUN/tunisia-bizerte-andalusian-quarter2.jpg" >
+          <div class="card-content">
+          <h1 class="card-header"><strong>PARADISE ZOO</strong></h1>
+          <p class="card-text">
+         Just outside the village of Abbès is the small desert zoo and interesting botanic garden known as the Zoo du Paradis.
+Here, you can see endemic desert animals and oasis plants, including acacias, aloes, cacti, henna, hibiscus, and pomegranate trees.
+There is a small café, where you can sample "teas" made from various kinds of flowers local to the area. In the hamlet of Abbès itself, is the marabout (shrine) of local holy man Sidi Ali Bou Lifa, topped by a mighty dome. In front of the marabout, which attracts a large number of pilgrims who come to pay their respects, is a large and much revered jujube tree, said to have been planted by the holy man himself.<br></p>
+        </div>
+      </div>
+         </div>
+       
+         </div>   
+         </div>  
+
+<!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+    </div>
+    
+    
+   
+
+    
+
+  
+  
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p style="color:white;">TuniGuide is a website that provides accurate informations
+such as events,places about Tunisia.
+Our webiste aim to provide advice on which
+destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+
+</section>
+  </div>
+  <script src="places.js"></script>
+</body>
+</html>
+
+  
+  

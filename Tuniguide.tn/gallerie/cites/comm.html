@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <body>
+<?php
+include_once ('gallerieDB.php');
+session_start();
+$db= new galDB ;
+if (isset ($_POST["comment"])) {
+        if (isset($_SESSION['uid'])) {
+            $res1=$db->addComm($_POST["comment"],$_SESSION['uid']);
+            header("location: Chott-el-Djerid.php");
+
+        }
+        else {
+
+            echo'
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+            <script>swal(
+                "Error",
+                 "You must login before",
+                 "error"
+              ).then(function() {
+                window.location = "../../login/index.php";
+              });</script>
+            ';
+        }
+
+    }
+
+
+?>
+</body>
+</html>

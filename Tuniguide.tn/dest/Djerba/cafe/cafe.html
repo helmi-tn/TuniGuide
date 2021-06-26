@@ -1,0 +1,212 @@
+<?php
+	session_start ();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TuniGuide | Djerba Cafés</title>
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="diaporama/diap.css">
+    <link rel="stylesheet" href="cafe.css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+</head>
+<body>
+    <script src="cafe.js"></script>
+<?php
+
+
+
+$_SESSION ['username']="monta";
+
+
+
+?>
+<!-- Navbar -->
+
+	<header>
+    <div class='navbar'>
+    <a href="../../../home/home.php" id="logo" target="_blank" >TuniGuide</a>
+    <nav>
+      <ul>
+        <li><a href="../../../home/home.php"><i class="fa fa-home"></i>Home</a></li>
+        <div class="dropdown">
+            <li><a href=""><i class="fa fa-map-marked-alt"></i>Destinations <i class="fa fa-caret-down"></i></a></li>
+           <div class="dropdown-content">
+      <a href="../home/home.html">Djerba</a> <hr style='margin:-0.1rem;'>   
+      <a href="../../Monastir/home/home.html">Monastir</a> <hr style='margin:-0.1rem;'>
+      <a href="../../Tozeur/home/home.html">Tozeur</a> <hr style='margin:-0.1rem;'>
+          </div>
+        </div>
+      
+        </ul>
+      </nav>
+    </div>
+     <script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+</header>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class='bg'>
+   <button class="viewonmap" onClick="showMap()"><i class="fas fa-map-marker-alt"></i> View on map</button>
+    <!--GOOGLE MAPS-->
+    <div class="googlemaps">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d147893.90691118952!2d10.86498534901089!3d33.79788519532315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zY2FmZSAmIGNhZsOpcw!5e0!3m2!1sfr!2stn!4v1621034341608!5m2!1sfr!2stn"  width="1215" height="600" style="border:0;" allowfullscreen="" ></iframe>
+    </div>
+    
+    <!--GOOGLE MAPS-->
+  <div class="hidit">
+    <div class="mySlides fade">
+       <div class="TunisiaClass">
+      DJERBA
+      </div>
+      <div class="MonastirClass">
+      CAFÉS
+      </div>
+      
+   <img src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80' style="width:80%;height:48rem;">
+  </div>
+      
+    </div>
+    
+       <div class="whitepsace">
+         <br> <br>
+         
+          <!--ICONS!!!!!!!!!!!!-->
+<div style="flex-direction:column;display:flex;margin-bottom:-15rem;margin-left:-4rem;" >
+  <div style="font-weight:600;font-size:1.5rem;float:left;margin-top:2rem;margin-left:5rem;margin-bottom:1rem;">Sections</div>
+  <div class="flexchild">
+    <a href="../rest/rest.html">
+    <div class="icon" style="background: -webkit-linear-gradient(left,#b224ef,black);"><i class="fas fa-utensils" ></i></div>
+    <div><a href="../rest/rest.html" >&nbsp&nbspRestaurants</a></div>
+    </div>
+    </a>
+  
+  <div class="flexchild">
+    <a href="../places/places.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#EB5757,#000000);"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="text"><a href="../places/places.html" >&nbsp&nbspPlaces</a></div>
+  </div>
+    </a>
+  
+  <div class="flexchild" >
+    <a href="../cafe/cafe.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#6190E8,#000000)"><i class="fas fa-coffee"></i></div>
+    <div><a href="../cafe/cafe.html" >&nbsp&nbspCafés</a></div>
+  </div>
+  
+  </a>
+  
+  <div class="flexchild" >
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#43C6AC,#000000)"><i class="fas fa-store-alt"></i></div>
+    <div><a href="#" >&nbsp&nbspShopping</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" style="border-bottom:1px solid #404040;">
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,yellow,#000000)"><i class="fas fa-hotel"></i></div>
+    <div><a href="#" >&nbsp&nbspHotels</a></div>
+  </div>
+  </a>
+  
+    </div>  
+     
+         
+
+
+<script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+ <!--ICONSSSSSSS!!!!!!!!!!-->
+        <div style="margin-left:15rem;margin-top:-19rem;">
+        <p class='monas'>DJERBA CAFÉS</p>
+      <hr style="width:70%;margin-left:5rem;border-width:3px;">
+      <p style="text-align:center;margin:0 5rem;line-height:2.5">Djerba offers some wonderful oceanview cafes to rest your feet and discuss further actions for the day. Grab a <strong>tea or coffee</strong> in the afternoon and come back in the evening for <strong>cocktails</strong>. Most offer you spacious terraces with tables in the shadow to enjoy your time.</p> <br>  
+    
+         </div>
+         <br>
+         <hr style="width:70%;border-width:5px;margin-left:20rem;">
+         <br>
+        <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+   <div class="bodycard">      
+    <div class="grid">
+      <div class="grid-item" style="width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/08/02d2c8aa186c136e781aeb5693d8f507.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>EL FLOUKA</strong><span style="font-size:0.8rem;">&nbsp&nbsp +216 250 552 35<span> </h1>
+          <p class="card-text">
+           If you're looking for a cozy place after a full day of beachlife and sightseeing, El Flouka is the place for you. Delicious bites and refreshing tea make it a favourite of travellers from all over the world.</p>
+          <a href="https://www.facebook.com/Complexe-El-Flouka-Djerba-1676468492574399/" target="_blank"><button class="card-btn" style="margin-top:-1rem;">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/17/ee819c4407731f64da6d19d294a42412.jpg" alt="Le pirate">
+          <div class="card-content">
+          <h1 class="card-header"><strong>HAVANA CAFE</strong><span style="font-size:0.8rem;">&nbsp+216 24 809 373<span></h1>
+          <p class="card-text">
+           Enjoy a great view on the lovely Marina of Djerba while sipping hot drinks at the Havana Cafe. If you are looking for a bit more of a party atmosphere drop by in the evening and grab one of their cocktails.</p>
+           <a href="https://www.facebook.com/Caf%C3%A9-Havana-198189293698590/" target="_blank"><button class="card-btn" style="margin-top:-1rem;">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:25rem;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/03/7567ac02c85eaea3d213ca9c0ccb1b98.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>BEN YEDDER<span style="font-size:0.8rem;">&nbsp&nbsp&nbsp  +216 53 364 750<span></strong></h1>
+          <p class="card-text">
+           Try one of the best cakes in town at Cafe Ben Yedder. Locals love it for its cozy setting and friendly atmosphere. Ask for the pie of the day and enjoy some strong coffee with it.</p>
+           <a href="www.cafesbenyedder.com.tn" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+         </div>   
+         </div>  
+        
+     <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!-->     
+         </div>   
+         </div>  
+
+          <br>
+                        </div>
+          <section class="footer">
+    <h4>ABOUT US</h4>
+    <p style="color:white;">TuniGuide is a website that provides accurate informations
+such as events,places about Tunisia.
+Our webiste aim to provide advice on which
+destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+</section>
+
+
+          
+
+   
+        
+    
+
+  
+  

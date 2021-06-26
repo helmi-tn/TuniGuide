@@ -1,0 +1,241 @@
+<?php
+	session_start ();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TuniGuide | Tozeur Restaurants</title>
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="diaporama/diap.css">
+    <link rel="stylesheet" href="rest.css">
+
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+</head>
+<body>
+<?php
+
+
+
+$_SESSION ['username']="monta";
+
+
+
+?>
+<!-- Navbar -->
+
+	<header>
+    <div class='navbar'>
+    <a href="../../../home/home.php" id="logo" target="_blank" >TuniGuide</a>
+    <nav>
+      <ul>
+        <li><a href="../../../home/home.php"><i class="fa fa-home"></i>Home</a></li>
+        <div class="dropdown">
+            <li><a href=""><i class="fa fa-map-marked-alt"></i>Destinations <i class="fa fa-caret-down"></i></a></li>
+           <div class="dropdown-content">
+      <a href="../../Djerba/home/home.html">Djerba</a> <hr style='margin:-0.1rem;'>   
+      <a href="../../Monastir/home/home.html">Monastir</a> <hr style='margin:-0.1rem;'>
+      <a href="../home/home.html">Tozeur</a> <hr style='margin:-0.1rem;'>
+          </div>
+        </div>
+  
+        </ul>
+      </nav>
+    </div>
+     <script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+</header>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class='bg'>
+   <button class="viewonmap" onClick="showMap()"><i class="fas fa-map-marker-alt"></i> View on map</button>
+    <!--GOOGLE MAPS-->
+    <div class="googlemaps">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d18460.064447334746!2d8.129181972086679!3d33.921188254735625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sfr!2stn!4v1621342952587!5m2!1sfr!2stn"  width="1215" height="600" style="border:0;" allowfullscreen="" ></iframe>
+    </div>
+    
+    <!--GOOGLE MAPS-->
+  <div class="hidit">
+    <div class="mySlides fade">
+       <div class="TunisiaClass">
+      TOZEUR
+      </div>
+      <div class="MonastirClass">
+      RESTAURANTS
+      </div>
+      
+   <img src='https://assets.anantara.com/image/upload/q_auto,f_auto,c_scale,w_1440/media/minor/anantara/images/anantara-tozeur-resort/gallery/overview/atozfbmekongpoolviewgallery1920x1037.jpg' style="width:80%;height:48rem;">
+  </div>
+      
+    </div>
+    
+       <div class="whitepsace">
+         <br> <br>
+         
+          <!--ICONS!!!!!!!!!!!!-->
+<div style="flex-direction:column;display:flex;margin-bottom:-15rem;margin-left:-4rem;" >
+  <div style="font-weight:600;font-size:1.5rem;float:left;margin-top:2rem;margin-left:5rem;margin-bottom:1rem;">Sections</div>
+  <div class="flexchild">
+    <a href="../rest/rest.html">
+    <div class="icon" style="background: -webkit-linear-gradient(left,#b224ef,black);"><i class="fas fa-utensils" ></i></div>
+    <div><a href="../rest/rest.html" >&nbsp&nbspRestaurants</a></div>
+    </div>
+    </a>
+  
+  <div class="flexchild">
+    <a href="../places/places.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#EB5757,#000000);"><i class="fas fa-map-marker-alt"></i></div>
+    <div class="text"><a href="../places/places.html" >&nbsp&nbspPlaces</a></div>
+  </div>
+    </a>
+  
+  <div class="flexchild" >
+    <a href="../cafes/cafe.html">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#6190E8,#000000)"><i class="fas fa-coffee"></i></div>
+    <div><a href="../cafes/cafe.html" >&nbsp&nbspCafés</a></div>
+  </div>
+  </a>
+  <div class="flexchild" >
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,#43C6AC,#000000)"><i class="fas fa-store-alt"></i></div>
+    <div><a href="#" >&nbsp&nbspShopping</a></div>
+  </div>
+  </a>
+  
+  <div class="flexchild" style="border-bottom:1px solid #404040;">
+    <a href="">
+    <div class="icon" style="background:-webkit-linear-gradient(left,yellow,#000000)"><i class="fas fa-hotel"></i></div>
+    <div><a href="#" >&nbsp&nbspHotels</a></div>
+  </div>
+  </a>
+  
+    </div>  
+     
+         
+
+
+<script src="https://kit.fontawesome.com/bc6bf35373.js" crossorigin="anonymous"></script>
+ <!--ICONSSSSSSS!!!!!!!!!!-->
+         <div style="margin-left:13rem;margin-top:-17rem;">
+        <p class='monas'>RESTAURANTS IN TOZEUR</p>
+      <hr style="width:70%;margin-left:5rem;border-width:3px;">
+      <p style="text-align:center;margin:0 5rem;line-height:2.5">Discover Restaurants offering the best Tunisian food in Tozeur, Tozeur Governorate, Tunisia. <strong>Berber spice</strong>. <strong>Asian fire</strong>. <strong>Mediterranean freshness</strong>. Anantara Sahara Tozeur Resort & Villas, home to some of Tunisia's best restaurants, offers you the world on a plate in a beautiful <strong>desert landscape</strong>.</p> <br>  
+    
+         </div>
+         <br>
+         <hr style="width:70%;border-width:5px;margin-left:20rem;">
+         <br>
+        <!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+   <div class="bodycard">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-tozeur-resort/dining/desert-rose/anantara_tozeur_resort_dining_desert_rose_944x510.jpg?h=510&w=944&la=fr">
+          <div class="card-content">
+          <h1 class="card-header"><strong>SARAB</strong><span style="font-size:1rem;">&nbsp&nbsp +216 70 100 800<span> </h1>
+          <p class="card-text">
+           Start each day with a sumptuous buffet of coffee and juice, freshly baked pastries and with an open kitchen preparing food live in your favorite restaurant among all of Tozeur.<br><br> </p>
+          <a href="https://www.facebook.com/Soprano.Monastir/" target="_blank"><button class="card-btn" style="margin-top:-1rem;">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-tozeur-resort/dining/oasis/anantara_tozeur_resort_dining_oasis_restaurant_944x510.jpg?h=510&w=944&la=fr" alt="Le pirate">
+          <div class="card-content">
+          <h1 class="card-header"><strong>OASIS</strong><span style="font-size:1rem;">&nbsp&nbsp+216 70 100 800<span></h1>
+          <p class="card-text">
+            Take a lounge chair to bask or sit on the terrace. Spoil yourself with freshly baked pasta, risotto and pizza. Quench your thirst with a selection of beers, wines and cocktails served at your favorite pool bar in Tunisia.</p>
+           <a href="https://www.anantara.com/fr/sahara-tozeur/restaurants/sarab" target="_blank"><button class="card-btn" style="margin-top:-1rem">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:0rem;width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://image.arrivalguides.com/600x/09/173c4dcbbb151fd54754b1fe4b8172d5.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong>CHOUCHOU</strong><span style="font-size:0.8rem;">&nbsp&nbsp+216 25 919 349<span></h1>
+          <p class="card-text">
+            Chouchou is a warm and welcoming restaurant well known for its friendly staff, kind owner and fresh food. They've received praise for their couscous.</p>
+           <a href="https://www.anantara.com/fr/sahara-tozeur/restaurants/oasis" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+         </div>   
+         </div>  
+        <!--SECOND LINE CARDS-->
+         
+                <div class="bodycard" style="margin-top:-10rem;">      
+    <div class="grid">
+      <div class="grid-item" style="width:10cm;">
+        <div class="card">
+          <img class="card-img" src="https://media-cdn.tripadvisor.com/media/photo-s/1b/18/0a/50/bien-que-tozeur-est-une.jpg">
+          <div class="card-content">
+          <h1 class="card-header"><strong> TOZOROUS</strong><span style="font-size:1rem;">&nbsp&nbsp  +216 95 603 783<span></h1>
+          <p class="card-text">
+          This recommended restaurant serves up pasta, grilled meat and couscous dishes in a brick-walled dining room complete with a working coffee pot–shaped fountain in the centre.<br></p>
+          <a href="https://m.facebook.com/profile.php?id=907306482799666" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       <div class="grid-item" style="margin-left:-5cm;width:20cm;">
+        <div class="card">
+          <img class="card-img"src="https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-tozeur-resort/dining/mekong/anantara_tozeur_resort_dining_mekong_restaurent_944_x_410.jpg?h=510&w=944&la=en" >
+          <div class="card-content">
+          <h1 class="card-header"><strong>MEKING</strong><span style="font-size:1rem;">&nbsp&nbsp +216 70 100 800<span></h1>
+          <p class="card-text">
+           Travel through the aromas and spices of the Mekong basin, from southern China down to Vietnam and Thailand. Contemporary decor at this Asian restaurant in Tunisia sets the stage for an exotic feast for the senses. Take a seat inside or out on the terrace overlooking the pool oasis.<br><br></p>
+           <a href="https://www.anantara.com/en/sahara-tozeur/restaurants/mekong" target="_blank"><button class="card-btn">
+            Visit <span>&rarr;</span></button></a>
+        </div>
+      </div>
+         </div>
+       
+         </div>   
+         </div>  
+
+<!--CARDS !!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+    </div>
+    
+    
+   
+
+    
+
+  
+  
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p style="color:white;">TuniGuide is a website that provides accurate informations
+such as events,places about Tunisia.
+Our webiste aim to provide advice on which
+destinations, attractions, accommodations, and so on, are worth a visit and providing information on how to access them.</p>
+        <div class="incons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+</section>
+  </div>
+  <script src="rest.js"></script>
+</body></html>
+    
+
+  
+  
